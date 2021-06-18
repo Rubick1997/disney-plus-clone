@@ -1,7 +1,6 @@
 import React from 'react'
-import styles from "./styles.module.css";
 
-function Home() {
+function Viewers() {
     return (
         <div>
             
@@ -9,4 +8,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Viewers

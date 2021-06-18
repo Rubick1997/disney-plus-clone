@@ -9,7 +9,7 @@ type NavButtonTypes = {
 
 function NavButton({ name, icon }: NavButtonTypes) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} role="button" >
       {icon}
       <span>{name}</span>
     </div>

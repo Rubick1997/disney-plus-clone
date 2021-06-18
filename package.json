@@ -14,10 +14,15 @@
     "@types/react": "^16.14.8",
     "@types/react-dom": "^16.9.13",
     "@types/react-redux": "^7.1.16",
+    "component": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "styled": "^1.0.0",
+    "styled-components": "^5.3.0",
     "typescript": "~4.1.5"
   },
   "scripts": {
@@ -40,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.4",
+    "@types/styled-components": "^5.1.10",
+    "mq-polyfill": "^1.1.8"
   }
 }
