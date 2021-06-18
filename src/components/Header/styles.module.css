@@ -1,0 +1,18 @@
+.nav {
+  height: 70px;
+  background: #090b13;
+  display: flex;
+  align-items: center;
+}
+.img {
+  width: 80px;
+}
+.navMenu {
+  width: 80px;
+  display: flex;
+  flex: 1;
+}
+
+@media (min-width: 800px) {
+
+}
