@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+.container:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/login-background.jpg");
+  z-index: -1;
+}
+
+.content {
+  width: 90%;
+  max-width: 650px;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+.description {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 1.5;
+}
+.logoTwo {
+  width: 90%;
+}

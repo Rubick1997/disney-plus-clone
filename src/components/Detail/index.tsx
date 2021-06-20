@@ -6,13 +6,11 @@ import styles from "./styles.module.css";
 const PlayButton = withStyles({
   root: {
     borderRadius: 4,
-    fontSize: 15,
     padding: "0px 24px",
     marginRight: 22,
     height: 56,
     background: "rgb(249, 249, 249)",
     border: "none",
-    letterSpacing: 1.8,
   },
 })(Button);
 
@@ -61,13 +59,13 @@ function Detail() {
           variant="contained"
           startIcon={<PlayArrow style={{ fontSize: 30 }} />}
         >
-          Play
+          <div style={{ letterSpacing: 1.8, fontSize: 15 }}>Play</div>
         </PlayButton>
         <TrailerButton
           variant="outlined"
           startIcon={<PlayArrow style={{ fontSize: 30, fill: "white" }} />}
         >
-          Trailer
+          <div style={{ letterSpacing: 1.8, fontSize: 15 }}>Trailer</div>
         </TrailerButton>
         <AddButton>
           <Add
@@ -90,9 +88,9 @@ function Detail() {
         2018 * 7m * Action, Adventure, Science Finction, Fantasy Epic
       </div>
       <div className={styles.description}>
-        Thirty years after the Galactic Civil War,the First Order has
-        risen from the fallen Galactic Empire and seeks to end the New Republic.
-        The Resistance, backed by the Republic and led by General Leia Organa,
+        Thirty years after the Galactic Civil War,the First Order has risen from
+        the fallen Galactic Empire and seeks to end the New Republic. The
+        Resistance, backed by the Republic and led by General Leia Organa,
         opposes the First Order. Leia searches for her brother, Luke Skywalker,
         who has gone missing.
       </div>
