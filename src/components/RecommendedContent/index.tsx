@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { getRecommendedContent } from "../../actions";
-import axios from "axios";
+
 import styles from "./styles.module.css";
 import { ContentType } from "../../types";
 
@@ -29,14 +31,16 @@ function RecommendedConent() {
         {content &&
           content.map((item) => (
             <div className={styles.wrap} key={item.id}>
-              <img
-                src={
-                  item.backdrop_path
-                    ? `https://image.tmdb.org/t/p/w300/${item.backdrop_path}`
-                    : "https://www.movienewz.com/img/films/poster-holder.jpg"
-                }
-                alt={item.name}
-              />
+              <Link to={`/detail/${item.media_type}/${item.id}`}>
+                <img
+                  src={
+                    item.backdrop_path
+                      ? `https://image.tmdb.org/t/p/w500/${item.backdrop_path}`
+                      : "https://www.movienewz.com/img/films/poster-holder.jpg"
+                  }
+                  alt={item.name || item.title}
+                />
+              </Link>
             </div>
           ))}
       </div>

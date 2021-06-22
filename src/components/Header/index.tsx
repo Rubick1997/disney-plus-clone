@@ -43,7 +43,7 @@ function Header() {
         <div className={styles.navMenu}>
           <img src="/img/logo.svg" alt="Disney Logo" className={styles.img} />
           {navListItems.map((item) => (
-            <NavButton name={item.name} icon={item.icon} />
+            <NavButton name={item.name} icon={item.icon} key={item.name}/>
           ))}
         </div>
       )}
