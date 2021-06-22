@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import styles from "./styles.module.css";
+import { ContentType } from "../../types";
+import { useAppSelector } from "../../app/hooks";
 
 function ImageSlider() {
   let settings = {
@@ -14,8 +16,20 @@ function ImageSlider() {
     slidesToScroll: 1,
     autoplay: true,
   };
+  const info: ContentType[] = useAppSelector(
+    (state) => state.recommendedContent
+  );
+
   return (
     <Carousel {...settings}>
+      {/* {info.map((item) => (
+          <div className={styles.wrap}>
+            <img
+              src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`}
+              alt=""
+            />
+          </div>
+        ))} */}
       <div className={styles.wrap}>
         <img src="/img/slider-badging.jpg" alt="BadGing" />
       </div>

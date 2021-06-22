@@ -1,10 +1,10 @@
 import React from "react";
-import Movies from "../Movies";
+import RecommendedContent from "../RecommendedContent";
 
 function Content() {
   return (
     <div>
-      <Movies />
+      <RecommendedContent/>
     </div>
   );
 }
