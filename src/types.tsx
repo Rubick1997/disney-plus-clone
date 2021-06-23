@@ -1,5 +1,11 @@
 export type GenresType = { id: number; name: string };
 
+export type UserInfo = {
+  name: string | null | undefined;
+  email: string | null | undefined;
+  photo: string | null | undefined;
+};
+
 export type ContentType = {
   id: number;
   media_type: string;

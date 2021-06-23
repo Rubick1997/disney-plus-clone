@@ -1,10 +1,11 @@
 import React from "react";
 import RecommendedContent from "../RecommendedContent";
+import styles from "./styles.module.css";
 
 function Content() {
   return (
-    <div>
-      <RecommendedContent/>
+    <div className={styles.container}>
+      <RecommendedContent />
     </div>
   );
 }

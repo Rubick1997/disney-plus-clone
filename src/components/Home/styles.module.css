@@ -1,13 +1,12 @@
 .container {
   min-height: calc(100vh - 70px);
-  padding: 0 calc(3.5vw +5px);
+  padding: 0 calc(3.5vw + 5px);
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .container:before {
   background: url("/src/images/home-background.png") center center / cover
-    no-repeat fixed;
+  no-repeat fixed;        
   content: "";
   position: absolute;
   top: 0;

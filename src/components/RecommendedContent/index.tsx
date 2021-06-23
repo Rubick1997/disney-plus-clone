@@ -29,7 +29,7 @@ function RecommendedConent() {
       <h4>Recommended for You</h4>
       <div className={styles.content}>
         {content &&
-          content.map((item) => (
+          content.slice(0,12).map((item) => (
             <div className={styles.wrap} key={item.id}>
               <Link to={`/detail/${item.media_type}/${item.id}`}>
                 <img

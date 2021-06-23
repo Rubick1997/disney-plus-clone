@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.burger{
+.burger {
   display: flex;
 }
 .navMenu {
@@ -16,4 +16,21 @@
 }
 .img {
   width: 80px;
+}
+
+.login {
+  border: 1px solid #f9f9f9;
+  padding: 8px 16px;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.2s ease 0s;
+}
+
+.login:hover {
+  background-color: #f9f9f9;
+  color: #000;
+  border-color: transparent;
 }
